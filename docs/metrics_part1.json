@@ -1,0 +1,46 @@
+{
+  "machine": {
+    "cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "versions": {
+    "python": "3.12.10",
+    "pandas": "3.0.6",
+    "polars": "2.0.0",
+    "pyarrow": "26.0.0"
+  },
+  "dataset": {
+    "file": "C:\\Users\\artur\\Desktop\\датасеты\\Земский\\csv\\1_датасет_население_возраст_и_пол.csv",
+    "size_mb": 293.7
+  },
+  "serialize_csv": {
+    "size_mb": 293.7,
+    "read_s": 3.49
+  },
+  "memory_raw_mb": 366.1,
+  "serialize": {
+    "pickle": {
+      "size_mb": 366.1,
+      "write_s": 3.5,
+      "read_s": 0.23
+    },
+    "feather": {
+      "size_mb": 42.9,
+      "write_s": 0.07,
+      "read_s": 0.13
+    },
+    "parquet_snappy": {
+      "size_mb": 5.7,
+      "write_s": 0.52,
+      "read_s": 0.12
+    },
+    "parquet_3cols": {
+      "read_s": 0.03,
+      "cols": [
+        "Страна",
+        "Год",
+        "Значение"
+      ]
+    }
+  }
+}

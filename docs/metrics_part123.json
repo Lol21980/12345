@@ -1,0 +1,108 @@
+{
+  "machine": {
+    "cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0"
+  },
+  "versions": {
+    "python": "3.12.10",
+    "pandas": "3.0.6",
+    "polars": "2.0.0",
+    "pyarrow": "26.0.0"
+  },
+  "dataset": {
+    "file": "C:\\Users\\artur\\Desktop\\датасеты\\Земский\\csv\\1_датасет_население_возраст_и_пол.csv",
+    "size_mb": 293.7
+  },
+  "serialize_csv": {
+    "size_mb": 293.7,
+    "read_s": 3.49
+  },
+  "memory_raw_mb": 366.1,
+  "serialize": {
+    "pickle": {
+      "size_mb": 366.1,
+      "write_s": 3.5,
+      "read_s": 0.23
+    },
+    "feather": {
+      "size_mb": 42.9,
+      "write_s": 0.07,
+      "read_s": 0.13
+    },
+    "parquet_snappy": {
+      "size_mb": 5.7,
+      "write_s": 0.52,
+      "read_s": 0.12
+    },
+    "parquet_3cols": {
+      "read_s": 0.03,
+      "cols": [
+        "Страна",
+        "Год",
+        "Значение"
+      ]
+    }
+  },
+  "mem_before_per_col_mb": {
+    "Index": 0.0,
+    "Страна": 20.67,
+    "Код страны": 11.0,
+    "Регион": 25.12,
+    "Группа дохода": 20.0,
+    "Код показателя": 24.42,
+    "Название показателя": 54.59,
+    "Тема показателя": 36.93,
+    "Определение показателя": 140.49,
+    "Год": 8.0,
+    "Значение": 15.43,
+    "Сноска": 9.45
+  },
+  "mem_before_total_mb": 366.1,
+  "uniq_ratio_text": {
+    "Страна": 0.0002,
+    "Код страны": 0.0002,
+    "Регион": 0.0,
+    "Группа дохода": 0.0,
+    "Код показателя": 0.0001,
+    "Название показателя": 0.0001,
+    "Тема показателя": 0.0,
+    "Определение показателя": 0.0001,
+    "Значение": 0.3804,
+    "Сноска": 0.0
+  },
+  "groupby_before_s": 0.03,
+  "read_before_s": 0.12,
+  "mem_after_per_col_mb": {
+    "Index": 0.0,
+    "country": 2.01,
+    "country_code": 2.0,
+    "region": 1.0,
+    "income_group": 1.0,
+    "indicator_code": 1.0,
+    "indicator_name": 1.0,
+    "indicator_topic": 1.0,
+    "indicator_def": 140.62,
+    "year": 3.0,
+    "value": 8.0
+  },
+  "mem_after_total_mb": 160.6,
+  "typed_parquet_mb": 3.6,
+  "orig_parquet_mb": 5.7,
+  "groupby_after_s": 0.018,
+  "read_after_s": 0.078,
+  "n_category_cols": 7,
+  "bench": {
+    "read_pandas": 0.11,
+    "read_polars": 0.23,
+    "filter_pandas": 0.041,
+    "filter_polars": 0.005,
+    "group_pandas": 0.027,
+    "group_polars_eager": 0.006,
+    "chain_polars_lazy": 0.044,
+    "chain_pandas": 0.052,
+    "sort_pandas": 0.127,
+    "sort_polars": 0.021,
+    "join_pandas": 0.057,
+    "join_polars": 0.015
+  }
+}
